@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  background-color: #182848;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #182848, #4b6cb7);
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+/* FIXED HERO HEADING */
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #182848;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #eeeeee;
+}
+
+/* Events Section */
+
+.events {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.events h2,
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  width: 300px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.event-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.event-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.event-card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #182848;
+  color: white;
+  cursor: pointer;
+}
+
+.event-card button:hover {
+  background-color: #4b6cb7;
+}
+
+/* About Section */
+
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+  padding: 25px;
+  background-color: #182848;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .event-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
